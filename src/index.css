@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+}
+
+.icon {
+  width: 4.5rem;
+}
+
+.App.warm {
+  background-image: url('./img/bg-warm.jpg');
+}
+
+.App {
+  background-image: url('./img/bg-cold.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: 0,4s ease-out;
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0 , 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 3rem;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 7rem;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin-top: 5rem;
+  box-shadow: 0rem 0.5rem rgba(0, 0 , 0, 0.2);
+  color: black;
+  font-size: 2rem;
+  transition: 0.4s ease;
+}
+
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255 , 255, 0.4);
+}
+
+
+.location-box .location {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0.2rem 0.2rem rgba(50, 50, 50, 0.8);
+  margin-top: -2rem;
+}
+
+.location-box .date {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temperature {
+  position: relative;
+  display: inline-block;
+  margin: 1rem auto;
+  background-color: rgba(255, 255 , 255, 0.4);
+  border-radius: 1rem;
+  padding: 1.5rem 1.5rem;
+  color: whitesmoke;
+  font-size: 5rem;
+  font-weight: 700;
+  text-shadow: 0.2rem 0.2rem rgba(50, 50, 50, 0.8);
+  text-align: center;
+  box-shadow: 0.5rem 0.5rem rgba(0, 0 , 0, 0.2);
+}
+
+.weather-box .weather {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 400;
+  text-shadow: 0.2rem 0.2rem rgba(50, 50, 50, 0.8);
+}
+
+.weather {
+  padding-top: 1rem;
+}
